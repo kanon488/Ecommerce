@@ -31,12 +31,12 @@
 
 <main class="contenido-principal contenedor">
     <h2 class="text-center">Contacto</h2>
-    <form>
+    <form class="formulario">
         <fieldset>
             <legend>Tus datos</legend>
             <div class="campo">
                 <label for="nombre">Nombre: </label>
-                <input id="nombre" type="text" placeholder="Coloca tu nombre" />
+                <input id="nombre" type="text" placeholder="Coloca tu nombre" required />
             </div>
             <div class="campo">
                 <label for="asunto">Asunto: </label>
@@ -57,9 +57,9 @@
         </fieldset>
         <fieldset>
             <legend>País</legend>
-            
+
             <div class="campo">
-                <label for="pais">País</label>
+                <label for="pais">País:</label>
                 <select id="pais">
                     <option value="" disabled>-- Seleccione --</option>
                     <option value="MX" seleted>México</option>
@@ -91,10 +91,11 @@
                     <option value="Oficina">
                     <option value="Television">
                 </datalist>
-                
+
             </div>
         </fieldset>
-
+        <input class="btn" type="submit" value="Enviar Formulario">
+        <!-- <button type="submit">Enviar Formulario</button> -->
     </form>
 </main>
 
